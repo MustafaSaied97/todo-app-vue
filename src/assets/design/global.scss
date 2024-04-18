@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .app-container {
+    @apply px-5 sm:px-8 md:px-10 lg:px-[125px] xl:px-[160px] 2xl:px-[240px] 3xl:px-[310px] mx-auto max-w-[1920px];
+  }
+}
+
+@layer base {
+  // length variables
+  :root {
+    --main-header-height: 90px;
+    --main-content-height: calc(100vh - var(--main-header-height));
+    //in case of header  fixed use this calc(100vh   - var(--main-footer-height));
+    //in case of header not fixed use this calc(100vh -var(--main-header-height) - var(--main-footer-height));
+    scroll-behavior: smooth;
+    font-family: 'poppins', Helvetica, sans-serif;
+  }
+  /* color variables in ligth and dark themes */
+  .light {
+    --bg-clr:white;
+    --txt-clr:black;
+  }
+  .dark {
+    --bg-clr:#2e3643;//#1e293bcc   #2e3643
+    --txt-clr:rgb(132, 132, 132);
+  }
+
+  * {
+    padding: 0;
+    margin: 0;
+    @apply transition-colors duration-100; //for smooth transition for toggling theme
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+  }
+  html {
+    height: 100%;
+    width: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    height: 100%;
+    width: 100%;
+    min-width: 230px;
+    background-color: var(--white);
+    overflow-x: hidden;
+  }
+}

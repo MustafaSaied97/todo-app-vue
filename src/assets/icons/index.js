@@ -1,0 +1,10 @@
+export { default as CompletedIcon } from './CompletedIcon.vue';
+export { default as DarkICon } from './DarkICon.vue';
+export { default as DeleteIcon } from './DeleteIcon.vue';
+export { default as LightIcon } from './LightIcon.vue';
+export { default as PlusIcon } from './PlusIcon.vue';
+export { default as SortAscIcon } from './SortAscIcon.vue';
+export { default as SortDescIcon } from './SortDescIcon.vue';
+export { default as SortIcon } from './SortIcon.vue';
+export { default as UncompletedIcon } from './UncompletedIcon.vue';
+export { default as UnmarkedIcon } from './UnmarkedIcon.vue';
