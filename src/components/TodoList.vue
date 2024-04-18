@@ -7,7 +7,7 @@
         :class="`shadow-md rounded-md gap-3 p-4 flex sm:flex-row flex-col justify-between items-center dark:bg-slate-800/80   h-fit min-h-[4rem]`"
       >
         <!-- title -->
-        <p class="font-semibold sm:text-base text-sm max-w-4xl min-w-[240px] sm:text-start text-center overflow-hidden text-ellipsis whitespace-nowrap">{{ todoItem.title }}</p>
+        <p class="font-semibold sm:text-base text-sm max-w-[100%]  sm:text-start text-center overflow-hidden text-ellipsis  ">{{ todoItem.title }}</p>
         <!-- actions -->
         <div class="flex gap-8 justify-end items-center">
           <button @click="() => handleCompleteItem(todoItem)" :title="todoItem.isCompleted ? 'Completed task' : 'UnCompleted task'">
