@@ -3,7 +3,6 @@
     <div class="py-10 min-h-[--main-content-height]">
       <section class="flex sm:justify-end justify-center gap-3">
         <select
-          id="countries"
           v-model="selectedFilter"
           class="bg-gray-50 border cursor-pointer outline-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
         >
@@ -12,7 +11,7 @@
           <option value="completed">Completed Tasks</option>
           <option value="uncompleted">Uncompleted Tasks</option>
         </select>
-        <button @click="handleSort" class="py-1 px-4 rounded-md bg-slate-700/10 shadow-md" title="sort tasks alphabetically">
+        <button @click="handleSort" class="sm:py-1 sm:px-4 py-[.1rem] px-1 rounded-md bg-slate-700/10 shadow-md" title="sort tasks alphabetically">
           <SortIcon v-if="!sortOrder" />
           <SortAscIcon v-if="sortOrder == 'asc'" />
           <SortDescIcon v-if="sortOrder == 'desc'" />
